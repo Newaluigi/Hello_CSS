@@ -1,6 +1,10 @@
 # Hello_CSS
 WCS WORKSHOP [CSS workshop]
 
+![](/README/result1.jpg)
+![](/README/result2.jpg)
+
+
 ## Initialisation
 
 - In a new folder, create an *index.html* file.
@@ -30,7 +34,7 @@ Good job !
 
 You will have to create a basic home page following the layout below (**do not try** to be pixel perfect, this image is just a guide). 
 
-![Layout to reproduce](desktop_layout.png)
+![Layout to reproduce](/README/desktop_layout.bmp)
 
 > Hint: Browsers have default size for each HTML elements (margin, font-size, etc.). It is useful but sometimes you will prefer to reset some default behaviour. In this workshop, it could be interesting to remove margin on `<body>`. Furthermore, use `box-sizing: border-box` on each element will help you to deal element sizing (more info about [box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)).
 >
