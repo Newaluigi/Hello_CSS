@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+body {
+    margin: 0;
+    font-family: Verdana;
+}
+
+nav {
+    margin: 0;
+    padding: 10px;
+    background-color: #f76c6c;
+    color: white;
+    font-size: 30px;
+}
+
+li {
+    display: inline;
+    list-style: none;
+    padding-right: 40px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+}
+
+.Home {
+    margin: 0;
+    padding: 50px;
+    background-image:
+        url(ours.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    min-height: 250px;
+    font-size: 30px;
+    text-shadow: 3px 3px #f76c6c;
+}
+
+footer {
+    background-color: #f76c6c;
+    min-height: 50px;
+    margin-top: 30px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main {
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+article {
+    border-radius: 50px;
+    box-shadow: 14px 14px 17px rgb(226, 43, 43);
+    min-height: 250px;
+    min-width: 250px;
+    margin: 30px;
+}
+
+p {
+    max-width: 65ch;
+    text-align: justify;
+
+}
+
+section {
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#title {
+    font-weight: bold;
+}
+
+
+/*---------RESPONSIVE-------------*/
+
+@media screen and (max-width: 600px) {
+
+    nav {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 3fr;
+    }
+
+    #title {
+        text-align: center;
+        grid-area: ti;
+    }
+
+    #home {
+        grid-area: i1;
+    }
+
+    #about {
+        grid-area: i2;
+    }
+
+    #featured {
+        grid-area: i3;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "ti" "i1"
+            "ti" "i2"
+            "ti" "i3";
+    }
+}
